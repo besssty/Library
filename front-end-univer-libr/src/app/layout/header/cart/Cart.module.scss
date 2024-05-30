@@ -1,0 +1,13 @@
+.cartWrapper {
+	@apply absolute top-[3rem] w-60 -left-[9.5rem] bg-secondary rounded-xl px-5 py-3 text-sm z-20 text-white;
+	animation: 0.7s cartAnimation ease-in-out;
+}
+
+@keyframes cartAnimation {
+	from {
+		transform: translateX(110%);
+	}
+	to {
+		transform: translateX(0);
+	}
+}

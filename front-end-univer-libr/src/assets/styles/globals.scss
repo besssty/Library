@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+	@apply bg-bg-color text-base text-black overflow-x-hidden;
+	font-family: var(--font-monts), sans-serif;
+}
+
+img {
+	max-width: none;
+}
+
+.disabled {
+	pointer-events: none;
+	cursor: default;
+	text-decoration: none;
+	opacity: 0.2 !important;
+}
+
+.open-menu {
+	opacity: 1;
+	transform: scale(1);
+}
+
+.close-menu {
+	pointer-events: none;
+	opacity: 0;
+	transform: scale(0.8);
+}
